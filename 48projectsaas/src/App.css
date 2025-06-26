@@ -1,0 +1,183 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f0f2f5;
+  color: #333;
+}
+
+.app-layout {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.sidebar {
+  width: 220px;
+  background: #242526;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.sidebar h2 {
+  margin: 0 0 1rem;
+  font-weight: 700;
+  font-size: 1.5rem;
+  border-bottom: 1px solid #444;
+  padding-bottom: 0.5rem;
+}
+
+.sidebar a {
+  color: white;
+  text-decoration: none;
+  padding: 0.7rem 1rem;
+  margin-bottom: 0.3rem;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+}
+
+.sidebar a.active,
+.sidebar a:hover {
+  background-color: #3a3b3c;
+}
+
+.main-content {
+  flex-grow: 1;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.header {
+  background: #4267b2;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.notification-icon {
+  position: relative;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.badge {
+  position: absolute;
+  top: -5px;
+  right: -8px;
+  background: red;
+  color: white;
+  font-size: 0.75rem;
+  font-weight: bold;
+  border-radius: 50%;
+  padding: 2px 6px;
+}
+
+.notifications {
+  background: #e7f3ff;
+  padding: 1rem 2rem;
+  max-height: 80px;
+  overflow-y: auto;
+  border-bottom: 1px solid #ccc;
+}
+
+.notification {
+  padding: 0.3rem 0;
+  cursor: pointer;
+}
+
+.notification.unread {
+  font-weight: 700;
+}
+
+.team-list, .task-list, .admin-panel {
+  padding: 1rem 2rem;
+}
+
+.team-card, .task-card, .user-card, .card {
+  background: #f9fafb;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgb(0 0 0 / 0.1);
+}
+
+.team-card h3, .task-card h4, .user-card h4 {
+  margin-top: 0;
+}
+
+.dashboard {
+  padding: 2rem;
+}
+
+.dashboard-cards {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.dashboard-cards .card {
+  flex: 1;
+  text-align: center;
+  background: #4267b2;
+  color: white;
+  box-shadow: 0 4px 10px rgb(0 0 0 / 0.2);
+}
+
+select {
+  margin-left: 0.5rem;
+  padding: 0.3rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.page-content {
+  padding: 1rem 2rem 2rem 250px; 
+  min-height: 100vh;
+  background: #f9fafc;
+}
+
+.notification-list {
+  max-height: 300px;
+  overflow-y: auto;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+.notifications-page {
+  padding: 1rem 1rem 1rem 250px;
+  min-height: 20vh;
+  background-color: #f5f6fa;
+}
+
+.notifications-container {
+  max-height: 400px;
+  overflow-y: auto;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+}
+
+.notification {
+  padding: 0.8rem 1rem;
+  margin-bottom: 0.6rem;
+  border-radius: 6px;
+  background-color: #e1ecf4;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.notification:hover {
+  background-color: #d0e4f5;
+}
+
+.notification.read {
+  background-color: #f1f1f1;
+  color: #888;
+}
