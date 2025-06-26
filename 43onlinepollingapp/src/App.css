@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f0f4f8;
+  color: #333;
+}
+
+.navbar {
+  background: #005f99;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-links a {
+  color: white;
+  margin-left: 1rem;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.home, .poll-page {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.poll-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.card a {
+  color: #005f99;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.poll-detail h2,
+.poll-results h2 {
+  margin-bottom: 1rem;
+  color: #005f99;
+}
+
+.poll-detail ul,
+.poll-results ul {
+  list-style: none;
+  padding: 0;
+}
+
+.poll-detail li {
+  margin-bottom: 0.8rem;
+}
+
+.poll-detail button {
+  width: 100%;
+  padding: 0.6rem;
+  background: #007acc;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.poll-detail button:hover {
+  background: #005f99;
+}
+
+.poll-results li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.poll-results span {
+  flex: 0 0 120px;
+}
+
+.poll-results .progress {
+  flex: 1;
+  height: 12px;
+  background: #ddd;
+  border-radius: 6px;
+  margin: 0 0.5rem;
+  overflow: hidden;
+}
+
+.poll-results .fill {
+  height: 100%;
+  background: #007acc;
+  transition: width 0.5s ease;
+}
