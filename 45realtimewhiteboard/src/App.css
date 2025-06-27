@@ -1,0 +1,97 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f4f4;
+  color: #222;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+
+h1 {
+  background: #0077cc;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.8rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+canvas {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  cursor: crosshair;
+  display: block;
+  background-color: #ffffff;
+}
+.whiteboard-container {
+  max-width: 900px;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.toolbar {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.toolbar label {
+  font-weight: bold;
+  color: #333;
+}
+
+.toolbar input[type="color"] {
+  margin-left: 0.5rem;
+  cursor: pointer;
+  border: none;
+  background: none;
+  width: 36px;
+  height: 36px;
+  vertical-align: middle;
+}
+
+.toolbar select {
+  padding: 0.2rem 0.4rem;
+  cursor: pointer;
+}
+
+.toolbar button {
+  background: #0077cc;
+  border: none;
+  color: white;
+  padding: 0.4rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.toolbar button.active {
+  background: #cc3300;
+}
+
+.toolbar button:hover {
+  background: #005fa3;
+}
+
+.whiteboard-canvas {
+  border: 2px solid #0077cc;
+  border-radius: 10px;
+  touch-action: none; 
+  background: white;
+  display: block;
+  margin: 0 auto;
+  cursor: crosshair;
+}
